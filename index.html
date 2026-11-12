@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PT Petro Mandiri Nusantara (PMN) | Driving Energy Forward</title>
+  <meta name="description" content="PT Petro Mandiri Nusantara is a leading Indonesian energy company specializing in petroleum trading, oil & gas solutions, infrastructure, and nationwide fuel logistics." />
+  <meta name="keywords" content="Petro Mandiri Nusantara, PMN, Oil and Gas Indonesia, Petroleum Trading, Fuel Logistics, Energy Solutions, Pertamina partner, Marine Gas Oil, High Speed Diesel" />
+  <meta name="author" content="PT Petro Mandiri Nusantara" />
+
+  <!-- OpenGraph / Social Metadata -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="PT Petro Mandiri Nusantara (PMN) — Indonesian Energy & Petroleum" />
+  <meta property="og:description" content="Driving Energy Forward, Building a Sustainable Future. Integrated petroleum solutions, commercial trading, and logistics across Nusantara." />
+  <meta property="og:image" content="Assets/logo-pmn-transparent.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Assets/logo-pmn-emblem.png" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            pmn: {
+              navy: '#003B70',
+              blue: '#0066B3',
+              lightblue: '#EAF4FC',
+              dark: '#082B4C',
+              gray: '#F5F7FA',
+              cyan: '#00A3E0',
+              gold: '#FE8801',
+              green: '#3D9F32',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Motion (Framer Motion Engine for Vanilla/ES6 JS) -->
+  <script src="https://cdn.jsdelivr.net/npm/motion@11.11.17/dist/motion.js"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-white text-slate-800 antialiased font-sans selection:bg-pmn-blue selection:text-white">
+
+  <!-- ========================================================================= -->
+  <!-- TOP UTILITY BAR (Corporate Pertamina Style) -->
+  <!-- ========================================================================= -->
+  <div class="hidden lg:block bg-pmn-dark text-slate-300 text-xs py-2 border-b border-white/10 z-50 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+      <div class="flex items-center space-x-6">
+        <span class="inline-flex items-center gap-1.5 hover:text-white transition-colors">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-cyan-400"></i>
+          <span>SCBD Jakarta Selatan, Indonesia</span>
+        </span>
+        <span class="inline-flex items-center gap-1.5 hover:text-white transition-colors">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-cyan-400"></i>
+          <a href="tel:+622150887700">+62 21 5088 7700</a>
+        </span>
+        <span class="inline-flex items-center gap-1.5 hover:text-white transition-colors">
+          <i data-lucide="mail" class="w-3.5 h-3.5 text-cyan-400"></i>
+          <a href="mailto:info@petromandiri.co.id">info@petromandiri.co.id</a>
+        </span>
+      </div>
+
+      <div class="flex items-center space-x-6">
+        <div class="flex items-center space-x-2 text-[11px] text-slate-400">
+          <span class="px-2 py-0.5 rounded bg-white/10 border border-white/15">ISO 9001</span>
+          <span class="px-2 py-0.5 rounded bg-white/10 border border-white/15">ISO 14001</span>
+          <span class="px-2 py-0.5 rounded bg-white/10 border border-white/15">ISO 45001</span>
+        </div>
+
+        <div class="h-3 w-px bg-white/20"></div>
+
+        <!-- Language Switcher -->
+        <div class="flex items-center space-x-1 bg-white/10 p-0.5 rounded-md border border-white/15">
+          <button type="button" class="lang-toggle-btn px-2 py-0.5 text-[11px] font-bold rounded transition-colors" data-lang="id">ID</button>
+          <button type="button" class="lang-toggle-btn px-2 py-0.5 text-[11px] font-bold rounded transition-colors" data-lang="en">EN</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- NAVIGATION BAR (Sticky, Dynamic Background, Dropdowns) -->
+  <!-- ========================================================================= -->
+  <header id="main-navbar" class="fixed top-0 lg:top-8 left-0 right-0 z-40 py-4 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between">
+        
+        <!-- Brand Logo & Name -->
+        <a href="#home" class="flex items-center gap-3 group focus:outline-none">
+          <!-- Logo for Transparent Navbar (White Text) -->
+          <img src="Assets/logo-pmn-white.png" alt="PT Petro Mandiri Nusantara" class="h-10 sm:h-11 w-auto object-contain nav-logo-white block transition-opacity duration-300" />
+          <!-- Logo for Scrolled Solid White Navbar (Original/Full Color) -->
+          <img src="Assets/logo-pmn-transparent.png" alt="PT Petro Mandiri Nusantara" class="h-10 sm:h-11 w-auto object-contain nav-logo-color hidden transition-opacity duration-300" />
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center space-x-1 xl:space-x-2">
+          <a href="#home" class="nav-link px-3.5 py-2 text-sm font-semibold text-white/90 hover:text-white rounded-md transition-colors" data-i18n-en="Home" data-i18n-id="Beranda">Home</a>
+          <a href="#about" class="nav-link px-3.5 py-2 text-sm font-semibold text-white/90 hover:text-white rounded-md transition-colors" data-i18n-en="About Us" data-i18n-id="Tentang Kami">About Us</a>
+
+          <!-- Business Dropdown -->
+          <div class="relative group/dropdown py-2">
+            <button type="button" class="nav-link inline-flex items-center gap-1.5 px-3.5 py-2 text-sm font-semibold text-white/90 group-hover/dropdown:text-white rounded-md transition-colors focus:outline-none">
+              <span data-i18n-en="Our Business" data-i18n-id="Bisnis Kami">Our Business</span>
+              <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-200 group-hover/dropdown:rotate-180"></i>
+            </button>
+
+            <!-- Dropdown Menu Box -->
+            <div class="absolute left-0 top-full mt-1 w-80 bg-white rounded-xl shadow-2xl border border-slate-100 p-3 opacity-0 invisible group-hover/dropdown:opacity-100 group-hover/dropdown:visible transition-all duration-200 transform group-hover/dropdown:translate-y-0 translate-y-2 pointer-events-none group-hover/dropdown:pointer-events-auto">
+              <div class="p-2 border-b border-slate-100 mb-1">
+                <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400" data-i18n-en="Business Divisions" data-i18n-id="Divisi Usaha">Business Divisions</span>
+              </div>
+              <a href="#business" class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-pmn-lightblue/60 transition-colors group/item">
+                <div class="w-8 h-8 rounded-md bg-blue-50 text-pmn-blue flex items-center justify-center shrink-0 group-hover/item:bg-pmn-blue group-hover/item:text-white transition-colors">
+                  <i data-lucide="flame" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <h4 class="text-xs font-bold text-slate-800 group-hover/item:text-pmn-navy" data-i18n-en="Oil & Gas" data-i18n-id="Minyak & Gas Bumi">Oil & Gas</h4>
+                  <p class="text-[11px] text-slate-500 line-clamp-1" data-i18n-en="Petroleum solutions & support" data-i18n-id="Solusi & pendukung perminyakan">Petroleum solutions & support</p>
+                </div>
+              </a>
+
+              <a href="#business" class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-pmn-lightblue/60 transition-colors group/item">
+                <div class="w-8 h-8 rounded-md bg-blue-50 text-pmn-blue flex items-center justify-center shrink-0 group-hover/item:bg-pmn-blue group-hover/item:text-white transition-colors">
+                  <i data-lucide="trending-up" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <h4 class="text-xs font-bold text-slate-800 group-hover/item:text-pmn-navy" data-i18n-en="Petroleum Trading" data-i18n-id="Perdagangan Migas">Petroleum Trading</h4>
+                  <p class="text-[11px] text-slate-500 line-clamp-1" data-i18n-en="Commercial fuel partnerships" data-i18n-id="Kemitraan pasokan bahan bakar">Commercial fuel partnerships</p>
+                </div>
+              </a>
+
+              <a href="#business" class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-pmn-lightblue/60 transition-colors group/item">
+                <div class="w-8 h-8 rounded-md bg-blue-50 text-pmn-blue flex items-center justify-center shrink-0 group-hover/item:bg-pmn-blue group-hover/item:text-white transition-colors">
+                  <i data-lucide="cpu" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <h4 class="text-xs font-bold text-slate-800 group-hover/item:text-pmn-navy" data-i18n-en="Energy Solutions" data-i18n-id="Solusi Energi">Energy Solutions</h4>
+                  <p class="text-[11px] text-slate-500 line-clamp-1" data-i18n-en="Infrastructure & storage tanks" data-i18n-id="Infrastruktur & tangki penampung">Infrastructure & storage tanks</p>
+                </div>
+              </a>
+
+              <a href="#business" class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-pmn-lightblue/60 transition-colors group/item">
+                <div class="w-8 h-8 rounded-md bg-blue-50 text-pmn-blue flex items-center justify-center shrink-0 group-hover/item:bg-pmn-blue group-hover/item:text-white transition-colors">
+                  <i data-lucide="truck" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <h4 class="text-xs font-bold text-slate-800 group-hover/item:text-pmn-navy" data-i18n-en="Logistics & Distribution" data-i18n-id="Logistik & Distribusi">Logistics & Distribution</h4>
+                  <p class="text-[11px] text-slate-500 line-clamp-1" data-i18n-en="Vessel & tanker fleet supply chain" data-i18n-id="Rantai pasok armada laut & darat">Vessel & tanker fleet supply chain</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <a href="#why-choose-us" class="nav-link px-3.5 py-2 text-sm font-semibold text-white/90 hover:text-white rounded-md transition-colors" data-i18n-en="Why Us" data-i18n-id="Keunggulan">Why Us</a>
+          <a href="#sustainability" class="nav-link px-3.5 py-2 text-sm font-semibold text-white/90 hover:text-white rounded-md transition-colors" data-i18n-en="Sustainability" data-i18n-id="Keberlanjutan">Sustainability</a>
+          <a href="#news" class="nav-link px-3.5 py-2 text-sm font-semibold text-white/90 hover:text-white rounded-md transition-colors" data-i18n-en="News & Updates" data-i18n-id="Berita & Terkini">News & Updates</a>
+          <a href="#contact" class="nav-link px-3.5 py-2 text-sm font-semibold text-white/90 hover:text-white rounded-md transition-colors" data-i18n-en="Contact" data-i18n-id="Kontak">Contact</a>
+        </nav>
+
+        <!-- Right Side CTA & Mobile Hamburger -->
+        <div class="flex items-center space-x-3">
+          <a href="#contact" class="hidden sm:inline-flex btn-primary py-2.5 px-5 text-sm">
+            <span data-i18n-en="Contact Us" data-i18n-id="Hubungi Kami">Contact Us</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+
+          <!-- Mobile Hamburger Button -->
+          <button type="button" id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg text-white hover:bg-white/10 focus:outline-none transition-colors mobile-menu-btn" aria-label="Open Mobile Menu">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- MOBILE DRAWER NAVIGATION MENU -->
+  <!-- ========================================================================= -->
+  <div id="mobile-menu-overlay" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden transition-opacity"></div>
+  <aside id="mobile-menu" class="fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-white z-50 shadow-2xl p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-in-out">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-slate-100">
+        <img src="Assets/logo-pmn-transparent.png" alt="PMN Logo" class="h-9 w-auto" />
+        <button type="button" id="mobile-menu-close" class="p-2 rounded-md text-slate-500 hover:bg-slate-100" aria-label="Close Mobile Menu">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <nav class="py-6 space-y-1">
+        <a href="#home" class="block px-3 py-2.5 rounded-lg text-sm font-bold text-slate-700 hover:bg-pmn-lightblue hover:text-pmn-navy" data-i18n-en="Home" data-i18n-id="Beranda">Home</a>
+        <a href="#about" class="block px-3 py-2.5 rounded-lg text-sm font-bold text-slate-700 hover:bg-pmn-lightblue hover:text-pmn-navy" data-i18n-en="About Us" data-i18n-id="Tentang Kami">About Us</a>
+        <a href="#business" class="block px-3 py-2.5 rounded-lg text-sm font-bold text-slate-700 hover:bg-pmn-lightblue hover:text-pmn-navy" data-i18n-en="Our Business" data-i18n-id="Bisnis Kami">Our Business</a>
+        <a href="#why-choose-us" class="block px-3 py-2.5 rounded-lg text-sm font-bold text-slate-700 hover:bg-pmn-lightblue hover:text-pmn-navy" data-i18n-en="Why Choose Us" data-i18n-id="Mengapa PMN">Why Choose Us</a>
+        <a href="#sustainability" class="block px-3 py-2.5 rounded-lg text-sm font-bold text-slate-700 hover:bg-pmn-lightblue hover:text-pmn-navy" data-i18n-en="Sustainability" data-i18n-id="Keberlanjutan">Sustainability</a>
+        <a href="#news" class="block px-3 py-2.5 rounded-lg text-sm font-bold text-slate-700 hover:bg-pmn-lightblue hover:text-pmn-navy" data-i18n-en="News & Updates" data-i18n-id="Berita & Terkini">News & Updates</a>
+        <a href="#contact" class="block px-3 py-2.5 rounded-lg text-sm font-bold text-slate-700 hover:bg-pmn-lightblue hover:text-pmn-navy" data-i18n-en="Contact" data-i18n-id="Kontak Kami">Contact</a>
+      </nav>
+
+      <!-- Language selector inside mobile drawer -->
+      <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+        <span class="text-xs text-slate-500 font-semibold uppercase">Language</span>
+        <div class="flex items-center space-x-1 bg-slate-100 p-1 rounded-md">
+          <button type="button" class="lang-toggle-btn px-3 py-1 text-xs font-bold rounded" data-lang="id">ID</button>
+          <button type="button" class="lang-toggle-btn px-3 py-1 text-xs font-bold rounded" data-lang="en">EN</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="pt-6 border-t border-slate-100">
+      <a href="#contact" class="w-full btn-primary text-center justify-center">
+        <span data-i18n-en="Contact Our Team" data-i18n-id="Hubungi Tim Kami">Contact Our Team</span>
+      </a>
+      <p class="text-[11px] text-slate-400 text-center mt-3">PT Petro Mandiri Nusantara © 2026</p>
+    </div>
+  </aside>
+
+  <!-- ========================================================================= -->
+  <!-- HERO SECTION (Cinematic Slider, Corporate Headline, Dual CTA) -->
+  <!-- ========================================================================= -->
+  <section id="home" class="relative min-h-[90vh] lg:min-h-screen flex items-center justify-center overflow-hidden bg-pmn-dark">
+    <!-- Slider Container -->
+    <div id="hero-slides-container" class="absolute inset-0 w-full h-full"></div>
+
+    <!-- Centered Carousel Slide Indicators -->
+    <div class="absolute bottom-8 sm:bottom-10 left-0 right-0 z-30 flex items-center justify-center pointer-events-none">
+      <div id="hero-dots-container" class="flex items-center space-x-2.5 px-4 py-2 rounded-full bg-black/30 backdrop-blur-md border border-white/15 pointer-events-auto shadow-lg"></div>
+    </div>
+
+    <!-- Side Navigation Arrows -->
+    <button type="button" id="hero-prev-btn" class="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center backdrop-blur-md border border-white/20 transition-all hover:scale-105 shadow-xl" aria-label="Previous Slide">
+      <i data-lucide="chevron-left" class="w-6 h-6"></i>
+    </button>
+    <button type="button" id="hero-next-btn" class="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center backdrop-blur-md border border-white/20 transition-all hover:scale-105 shadow-xl" aria-label="Next Slide">
+      <i data-lucide="chevron-right" class="w-6 h-6"></i>
+    </button>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- STATISTICS STRIP (Animated Counters, Corporate Proof) -->
+  <!-- ========================================================================= -->
+  <section id="statistics-strip" class="bg-gradient-to-r from-pmn-navy via-pmn-blue to-pmn-navy text-white py-10 relative z-20 shadow-xl border-y border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center divide-y lg:divide-y-0 lg:divide-x divide-white/15">
+        
+        <div class="pt-4 lg:pt-0">
+          <div class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight flex items-center justify-center text-white">
+            <span class="stat-counter" data-target="15">0</span>
+            <span class="text-cyan-300 font-bold ml-0.5">+</span>
+          </div>
+          <p class="text-xs sm:text-sm text-blue-100 font-medium mt-2" data-i18n-en="Strategic Hubs Across Indonesia" data-i18n-id="Hub Strategis di Seluruh Nusantara">Strategic Hubs Across Indonesia</p>
+        </div>
+
+        <div class="pt-4 lg:pt-0">
+          <div class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight flex items-center justify-center text-white">
+            <span class="stat-counter" data-target="99.8">0</span>
+            <span class="text-cyan-300 font-bold ml-0.5">%</span>
+          </div>
+          <p class="text-xs sm:text-sm text-blue-100 font-medium mt-2" data-i18n-en="On-Time Supply Reliability" data-i18n-id="Keandalan Pasokan Tepat Waktu">On-Time Supply Reliability</p>
+        </div>
+
+        <div class="pt-4 lg:pt-0">
+          <div class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight flex items-center justify-center text-white">
+            <span class="stat-counter" data-target="5">0</span>
+            <span class="text-cyan-300 font-bold ml-0.5">M+</span>
+          </div>
+          <p class="text-xs sm:text-sm text-blue-100 font-medium mt-2" data-i18n-en="Safe Man-Hours Without LTI" data-i18n-id="Jam Kerja Selamat Tanpa LTI">Safe Man-Hours Without LTI</p>
+        </div>
+
+        <div class="pt-4 lg:pt-0">
+          <div class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight flex items-center justify-center text-white">
+            <span class="stat-counter" data-target="100">0</span>
+            <span class="text-cyan-300 font-bold ml-0.5">%</span>
+          </div>
+          <p class="text-xs sm:text-sm text-blue-100 font-medium mt-2" data-i18n-en="National Energy Commitment" data-i18n-id="Komitmen Ketahanan Energi Nasional">National Energy Commitment</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- ABOUT US SECTION ("Who We Are") -->
+  <!-- ========================================================================= -->
+  <section id="about" class="py-20 lg:py-28 bg-white relative overflow-hidden bg-energy-pattern">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="max-w-3xl mx-auto text-center mb-16 flex flex-col items-center reveal-on-scroll">
+        <span class="badge-blue mb-3" data-i18n-en="Who We Are" data-i18n-id="Tentang Kami">Who We Are</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-pmn-navy tracking-tight leading-tight">
+          <span data-i18n-en="Reliable Energy Solutions," data-i18n-id="Solusi Energi Terpercaya,">Reliable Energy Solutions,</span>
+          <br class="hidden sm:block" />
+          <span class="text-gradient-corporate" data-i18n-en="Nationwide Commitment." data-i18n-id="Komitmen untuk Nusantara.">Nationwide Commitment.</span>
+        </h2>
+        <div class="w-20 h-1.5 bg-pmn-blue mt-5 rounded-full mx-auto"></div>
+      </div>
+
+      <!-- Two-Column Layout -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        
+        <!-- Left Column: Corporate Story & Interactive Tabs -->
+        <div class="lg:col-span-7 space-y-8 reveal-on-scroll delay-100">
+          <p class="text-lg text-slate-700 leading-relaxed font-normal" data-i18n-en="PT Petro Mandiri Nusantara is an Indonesian company focused on the energy and petroleum sector. We strive to deliver reliable business solutions through operational excellence, strategic collaboration, and a commitment to sustainable development." data-i18n-id="PT Petro Mandiri Nusantara adalah perusahaan nasional Indonesia yang berfokus pada sektor energi dan perminyakan. Kami berkomitmen memberikan solusi bisnis yang andal melalui keunggulan operasional, kolaborasi strategis, dan dedikasi pada pembangunan berkelanjutan.">
+            PT Petro Mandiri Nusantara is an Indonesian company focused on the energy and petroleum sector. We strive to deliver reliable business solutions through operational excellence, strategic collaboration, and a commitment to sustainable development.
+          </p>
+
+          <!-- Interactive Tab Buttons -->
+          <div class="flex items-center gap-2 p-1.5 bg-slate-100 rounded-xl max-w-md">
+            <button type="button" class="about-tab-btn active flex-1 py-2.5 px-3 rounded-lg text-xs sm:text-sm font-bold text-slate-600 transition-all text-center" data-tab="overview" data-i18n-en="Overview" data-i18n-id="Ikhtisar">Overview</button>
+            <button type="button" class="about-tab-btn flex-1 py-2.5 px-3 rounded-lg text-xs sm:text-sm font-bold text-slate-600 transition-all text-center" data-tab="vision-mission" data-i18n-en="Vision & Mission" data-i18n-id="Visi & Misi">Vision & Mission</button>
+            <button type="button" class="about-tab-btn flex-1 py-2.5 px-3 rounded-lg text-xs sm:text-sm font-bold text-slate-600 transition-all text-center" data-tab="values" data-i18n-en="Core Values" data-i18n-id="Nilai Utama">Core Values</button>
+          </div>
+
+          <!-- Tab Content Panel -->
+          <div id="about-tab-content-panel" class="min-h-[220px]">
+            <!-- Dynamic Content Injected via main.js -->
+          </div>
+
+          <!-- ISO Certification Badges Strip -->
+          <div class="pt-6 border-t border-slate-200">
+            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider block mb-3" data-i18n-en="Quality & Compliance Standards" data-i18n-id="Standar Mutu & Kepatuhan">Quality & Compliance Standards</span>
+            <div class="flex flex-wrap gap-4">
+              <div class="flex items-center gap-2.5 px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 text-xs font-semibold">
+                <i data-lucide="award" class="w-4 h-4 text-pmn-blue"></i>
+                <span>ISO 9001:2015 (Quality)</span>
+              </div>
+              <div class="flex items-center gap-2.5 px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 text-xs font-semibold">
+                <i data-lucide="shield-check" class="w-4 h-4 text-pmn-green"></i>
+                <span>ISO 14001:2015 (Environment)</span>
+              </div>
+              <div class="flex items-center gap-2.5 px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 text-xs font-semibold">
+                <i data-lucide="hard-hat" class="w-4 h-4 text-pmn-gold"></i>
+                <span>ISO 45001:2018 (Safety)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Visual Storytelling & Floating Badge -->
+        <div class="lg:col-span-5 reveal-on-scroll delay-200">
+          <div class="relative">
+            <!-- Main Industrial Image -->
+            <div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100 aspect-[4/5] relative">
+              <img src="Assets/foto 1.jpg" alt="PMN Energy Operations" loading="lazy" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" />
+              <div class="absolute inset-0 bg-gradient-to-t from-pmn-navy/80 via-transparent to-transparent"></div>
+              
+              <div class="absolute bottom-6 left-6 right-6 text-white">
+                <p class="text-xs uppercase tracking-wider text-cyan-300 font-bold mb-1">PT Petro Mandiri Nusantara</p>
+                <h3 class="text-lg font-bold">Empowering Indonesian Industries</h3>
+              </div>
+            </div>
+
+            <!-- Floating Corporate Achievement Badge -->
+            <div class="absolute -bottom-6 -left-6 sm:-left-8 bg-white/95 backdrop-blur-md rounded-2xl p-5 shadow-2xl border border-blue-100 max-w-xs animate-pulse-subtle">
+              <div class="flex items-center gap-3.5">
+                <div class="w-12 h-12 rounded-xl bg-pmn-lightblue text-pmn-navy flex items-center justify-center shrink-0">
+                  <i data-lucide="shield-check" class="w-7 h-7 text-pmn-blue"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-extrabold text-pmn-navy" data-i18n-en="Verified Operations" data-i18n-id="Operasional Terverifikasi">Verified Operations</h4>
+                  <p class="text-xs text-slate-500 mt-0.5" data-i18n-en="Strict adherence to Indonesian energy regulations" data-i18n-id="Kepatuhan regulasi migas Republik Indonesia">Strict adherence to Indonesian energy regulations</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Decorative geometric element -->
+            <div class="absolute -top-6 -right-6 w-32 h-32 bg-pmn-lightblue/60 rounded-full blur-2xl -z-10"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- OUR BUSINESS SECTION (4 Premium Cards + Detailed Modals) -->
+  <!-- ========================================================================= -->
+  <section id="business" class="py-20 lg:py-28 bg-slate-50 relative border-t border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
+        <span class="badge-blue mb-3" data-i18n-en="Our Business" data-i18n-id="Lini Bisnis Kami">Our Business</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-pmn-navy tracking-tight">
+          <span data-i18n-en="Integrated Petroleum & Energy Capabilities" data-i18n-id="Kapabilitas Terpadu Perminyakan & Energi">Integrated Petroleum & Energy Capabilities</span>
+        </h2>
+        <p class="text-slate-600 text-base sm:text-lg mt-4 max-w-2xl mx-auto" data-i18n-en="Providing comprehensive energy infrastructure, commercial petroleum trading, and responsive nationwide distribution." data-i18n-id="Menyediakan infrastruktur energi komprehensif, perdagangan komersial migas, dan rantai pasok distribusi yang responsif di seluruh Indonesia.">
+          Providing comprehensive energy infrastructure, commercial petroleum trading, and responsive nationwide distribution.
+        </p>
+        <div class="w-16 h-1 bg-pmn-blue mx-auto mt-6 rounded-full"></div>
+      </div>
+
+      <!-- Business Cards Grid (Dynamic Injected via main.js) -->
+      <div id="business-cards-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <!-- Rendered by js/main.js -->
+      </div>
+
+      <!-- Customization Note Banner -->
+      <div class="mt-14 p-5 rounded-2xl bg-white border border-slate-200/90 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left reveal-on-scroll">
+        <div class="flex items-center gap-3.5">
+          <div class="w-10 h-10 rounded-xl bg-pmn-lightblue text-pmn-blue flex items-center justify-center shrink-0">
+            <i data-lucide="sliders" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-pmn-navy" data-i18n-en="Custom Commercial Solutions" data-i18n-id="Solusi Komersial Fleksibel">Custom Commercial Solutions</h4>
+            <p class="text-xs text-slate-500 mt-0.5" data-i18n-en="Business categories are adaptable according to PMN's actual operational scope and client requirements." data-i18n-id="Kategori bisnis dapat disesuaikan dengan lingkup operasional aktual PMN dan spesifikasi kebutuhan klien.">
+              Business categories are adaptable according to PMN's actual operational scope and client requirements.
+            </p>
+          </div>
+        </div>
+        <a href="#contact" class="btn-secondary py-2.5 px-4 text-xs font-bold shrink-0">
+          <span data-i18n-en="Request Proposal" data-i18n-id="Ajukan Proposal">Request Proposal</span>
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- WHY CHOOSE PMN ("Why Choose Us") -->
+  <!-- ========================================================================= -->
+  <section id="why-choose-us" class="py-20 lg:py-28 bg-white relative overflow-hidden bg-energy-pattern">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
+        <span class="badge-blue mb-3" data-i18n-en="Why Choose Us" data-i18n-id="Keunggulan Kami">Why Choose Us</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-pmn-navy tracking-tight">
+          <span data-i18n-en="Principles That Define Our Excellence" data-i18n-id="Prinsip Landasan Keunggulan Kami">Principles That Define Our Excellence</span>
+        </h2>
+        <p class="text-slate-600 text-base sm:text-lg mt-4 max-w-2xl mx-auto" data-i18n-en="Four fundamental pillars ensuring superior execution, governance, and long-term client satisfaction." data-i18n-id="Empat pilar fundamental yang menjamin eksekusi prima, tata kelola bersih, dan kepuasan jangka panjang mitra.">
+          Four fundamental pillars ensuring superior execution, governance, and long-term client satisfaction.
+        </p>
+        <div class="w-16 h-1 bg-pmn-blue mx-auto mt-6 rounded-full"></div>
+      </div>
+
+      <!-- 4 Value Proposition Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        
+        <!-- Pillar 1: Reliability -->
+        <div class="pmn-card p-8 group flex flex-col justify-between reveal-on-scroll delay-100">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-blue-50 text-pmn-blue flex items-center justify-center mb-6 group-hover:bg-pmn-blue group-hover:text-white transition-colors duration-300">
+              <i data-lucide="shield-check" class="w-7 h-7"></i>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-400" data-i18n-en="Dependable Solutions" data-i18n-id="Pasokan Terpercaya">Dependable Solutions</span>
+            <h3 class="text-xl font-extrabold text-pmn-navy mt-1 mb-3" data-i18n-en="Reliability" data-i18n-id="Keandalan">Reliability</h3>
+            <p class="text-sm text-slate-600 leading-relaxed" data-i18n-en="Delivering dependable business solutions with an uninterrupted supply chain and stringent quality assurance across every liter." data-i18n-id="Menghadirkan solusi bisnis andal dengan kepastian pasokan berkesinambungan dan jaminan mutu tersertifikasi.">
+              Delivering dependable business solutions with an uninterrupted supply chain and stringent quality assurance across every liter.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center text-xs font-semibold text-pmn-blue">
+            <span data-i18n-en="Guaranteed Continuity" data-i18n-id="Kontinuitas Terjamin">Guaranteed Continuity</span>
+          </div>
+        </div>
+
+        <!-- Pillar 2: Integrity -->
+        <div class="pmn-card p-8 group flex flex-col justify-between reveal-on-scroll delay-200">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-blue-50 text-pmn-blue flex items-center justify-center mb-6 group-hover:bg-pmn-blue group-hover:text-white transition-colors duration-300">
+              <i data-lucide="scale" class="w-7 h-7"></i>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-400" data-i18n-en="Governance & Ethics" data-i18n-id="Tata Kelola & Etika">Governance & Ethics</span>
+            <h3 class="text-xl font-extrabold text-pmn-navy mt-1 mb-3" data-i18n-en="Integrity" data-i18n-id="Integritas">Integrity</h3>
+            <p class="text-sm text-slate-600 leading-relaxed" data-i18n-en="Maintaining absolute transparency, ethical conduct, and compliance with national energy regulations and anti-bribery standards." data-i18n-id="Menjaga transparansi mutlak, etika bisnis tinggi, dan kepatuhan penuh terhadap regulasi migas nasional.">
+              Maintaining absolute transparency, ethical conduct, and compliance with national energy regulations and anti-bribery standards.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center text-xs font-semibold text-pmn-blue">
+            <span data-i18n-en="Full Transparency" data-i18n-id="Transparansi Total">Full Transparency</span>
+          </div>
+        </div>
+
+        <!-- Pillar 3: Innovation -->
+        <div class="pmn-card p-8 group flex flex-col justify-between reveal-on-scroll delay-300">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-blue-50 text-pmn-blue flex items-center justify-center mb-6 group-hover:bg-pmn-blue group-hover:text-white transition-colors duration-300">
+              <i data-lucide="lightbulb" class="w-7 h-7"></i>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-400" data-i18n-en="Advanced Technology" data-i18n-id="Teknologi Terkini">Advanced Technology</span>
+            <h3 class="text-xl font-extrabold text-pmn-navy mt-1 mb-3" data-i18n-en="Innovation" data-i18n-id="Inovasi">Innovation</h3>
+            <p class="text-sm text-slate-600 leading-relaxed" data-i18n-en="Embracing digital telemetry, automated fuel tracking, predictive logistics, and modern sustainable energy alternatives." data-i18n-id="Mengadopsi telemetri digital, sistem inventarisasi otomatis, dan alternatif energi ramah lingkungan.">
+              Embracing digital telemetry, automated fuel tracking, predictive logistics, and modern sustainable energy alternatives.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center text-xs font-semibold text-pmn-blue">
+            <span data-i18n-en="Smart Telemetry" data-i18n-id="Telemetri Cerdas">Smart Telemetry</span>
+          </div>
+        </div>
+
+        <!-- Pillar 4: Partnership -->
+        <div class="pmn-card p-8 group flex flex-col justify-between reveal-on-scroll delay-400">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-blue-50 text-pmn-blue flex items-center justify-center mb-6 group-hover:bg-pmn-blue group-hover:text-white transition-colors duration-300">
+              <i data-lucide="handshake" class="w-7 h-7"></i>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-400" data-i18n-en="Enduring Synergy" data-i18n-id="Sinergi Berkelanjutan">Enduring Synergy</span>
+            <h3 class="text-xl font-extrabold text-pmn-navy mt-1 mb-3" data-i18n-en="Partnership" data-i18n-id="Kemitraan">Partnership</h3>
+            <p class="text-sm text-slate-600 leading-relaxed" data-i18n-en="Building enduring, long-term strategic relationships with state-owned enterprises, industrial leaders, and local communities." data-i18n-id="Membangun kemitraan strategis jangka panjang dengan BUMN, pelaku industri utama, dan masyarakat lokal.">
+              Building enduring, long-term strategic relationships with state-owned enterprises, industrial leaders, and local communities.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center text-xs font-semibold text-pmn-blue">
+            <span data-i18n-en="Long-Term Vision" data-i18n-id="Visi Jangka Panjang">Long-Term Vision</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- CORPORATE COMMITMENT (Cinematic Blue & White Panorama Section) -->
+  <!-- ========================================================================= -->
+  <section class="py-24 lg:py-32 relative bg-pmn-dark text-white overflow-hidden">
+    <!-- Background Image with Gradient Overlay -->
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&w=2000&q=85" alt="Energy Infrastructure" class="w-full h-full object-cover object-center opacity-25" />
+      <div class="absolute inset-0 bg-gradient-to-r from-pmn-dark via-pmn-dark/90 to-pmn-navy/85"></div>
+      <div class="absolute inset-0 bg-energy-dark-pattern opacity-30"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-3xl mx-auto text-center mb-16 flex flex-col items-center reveal-on-scroll">
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/20 text-cyan-300 border border-blue-400/30 text-xs font-bold uppercase tracking-wider mb-4 mx-auto">
+          <i data-lucide="shield" class="w-3.5 h-3.5"></i>
+          <span data-i18n-en="Corporate Commitment" data-i18n-id="Komitmen Korporasi">Corporate Commitment</span>
+        </span>
+        <h2 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight text-white">
+          <span data-i18n-en="Committed to Excellence." data-i18n-id="Berkomitmen pada Keunggulan.">Committed to Excellence.</span>
+          <br />
+          <span class="text-gradient-light" data-i18n-en="Focused on the Future." data-i18n-id="Berfokus pada Masa Depan.">Focused on the Future.</span>
+        </h2>
+        <p class="text-slate-300 text-base sm:text-xl font-normal leading-relaxed mt-6 max-w-2xl mx-auto" data-i18n-en="We believe that sustainable growth comes from operational excellence, responsible business practices, and strong partnerships." data-i18n-id="Kami percaya bahwa pertumbuhan berkelanjutan lahir dari keunggulan operasional, praktik bisnis yang bertanggung jawab, dan kemitraan yang kokoh.">
+          We believe that sustainable growth comes from operational excellence, responsible business practices, and strong partnerships.
+        </p>
+      </div>
+
+      <!-- 4 Strategic Pillars Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 reveal-on-scroll delay-100">
+        
+        <div class="p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 hover:bg-white/15 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-cyan-500/20 text-cyan-300 flex items-center justify-center mb-5">
+            <i data-lucide="shield-alert" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2" data-i18n-en="HSSE Excellence" data-i18n-id="Keunggulan HSSE">HSSE Excellence</h3>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed" data-i18n-en="Targeting Zero Accident through stringent safety culture, standard operating procedures, and regular emergency response drills." data-i18n-id="Mencapai Target Zero Accident melalui budaya keselamatan ketat, SOP berstandar internasional, dan pelatihan tanggap darurat berkala.">
+            Targeting Zero Accident through stringent safety culture, standard operating procedures, and regular emergency response drills.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 hover:bg-white/15 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-300 flex items-center justify-center mb-5">
+            <i data-lucide="flag" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2" data-i18n-en="National Content (TKDN)" data-i18n-id="Penguatan TKDN">National Content (TKDN)</h3>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed" data-i18n-en="Prioritizing Indonesian-flagged maritime assets, domestic workforce development, and local community empowerment." data-i18n-id="Memprioritaskan armada berbendera Indonesia, penyerapan tenaga kerja lokal, dan pemberdayaan mitra daerah.">
+            Prioritizing Indonesian-flagged maritime assets, domestic workforce development, and local community empowerment.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 hover:bg-white/15 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-blue-500/20 text-blue-300 flex items-center justify-center mb-5">
+            <i data-lucide="network" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2" data-i18n-en="Supply Chain Resilience" data-i18n-id="Ketahanan Pasokan">Supply Chain Resilience</h3>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed" data-i18n-en="Multi-point distribution nodes and contingency logistics ensuring national industries never face operational fuel shortages." data-i18n-id="Jaringan distribusi multi-titik dan logistik kontingensi menjamin operasional industri tetap berjalan tanpa hambatan pasokan.">
+            Multi-point distribution nodes and contingency logistics ensuring national industries never face operational fuel shortages.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 hover:bg-white/15 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-300 flex items-center justify-center mb-5">
+            <i data-lucide="leaf" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2" data-i18n-en="Energy Transition" data-i18n-id="Transisi Energi">Energy Transition</h3>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed" data-i18n-en="Active contribution to cleaner fuel adoption, biofuel blending mandates (B35/B40), and low-carbon operational logistics." data-i18n-id="Dukungan penuh terhadap implementasi bauran energi terbarukan, mandat biofuel nasional, dan logistik ramah lingkungan.">
+            Active contribution to cleaner fuel adoption, biofuel blending mandates (B35/B40), and low-carbon operational logistics.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- SUSTAINABILITY & RESPONSIBILITY (Editorial Layout, HSSE & GCG) -->
+  <!-- ========================================================================= -->
+  <section id="sustainability" class="py-20 lg:py-28 bg-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="max-w-3xl mx-auto text-center mb-16 flex flex-col items-center reveal-on-scroll">
+        <span class="badge-blue mb-3" data-i18n-en="Sustainability & Responsibility" data-i18n-id="Keberlanjutan & Tanggung Jawab">Sustainability & Responsibility</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-pmn-navy tracking-tight leading-tight">
+          <span data-i18n-en="Balancing Energy Demand with" data-i18n-id="Menyelaraskan Kebutuhan Energi dengan">Balancing Energy Demand with</span>
+          <br class="hidden sm:block" />
+          <span class="text-gradient-corporate" data-i18n-en="Environmental & Social Stewardship" data-i18n-id="Kelestarian Lingkungan & Sosial">Environmental & Social Stewardship</span>
+        </h2>
+        <div class="w-20 h-1.5 bg-pmn-blue mt-5 rounded-full mx-auto"></div>
+      </div>
+
+      <!-- 4 Editorial Grid Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+        
+        <!-- 1. Environmental Responsibility -->
+        <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-blue-200 transition-all pmn-card reveal-on-scroll delay-100">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center mb-6">
+            <i data-lucide="leaf" class="w-6 h-6"></i>
+          </div>
+          <span class="text-xs uppercase font-bold tracking-wider text-emerald-600" data-i18n-en="Eco-Conscious Operations" data-i18n-id="Operasi Ramah Lingkungan">Eco-Conscious Operations</span>
+          <h3 class="text-xl sm:text-2xl font-extrabold text-pmn-navy mt-1 mb-4" data-i18n-en="Environmental Responsibility" data-i18n-id="Tanggung Jawab Lingkungan">Environmental Responsibility</h3>
+          <p class="text-sm sm:text-base text-slate-600 leading-relaxed mb-6" data-i18n-en="We adhere to ISO 14001:2015 frameworks, implementing strict containment systems at all terminal transfer points, vapor recovery units, and proactive spill-prevention protocols. We support Indonesia's 2060 Net Zero Emission roadmap through cleaner burning fuel alternatives." data-i18n-id="Menerapkan standar ISO 14001:2015 dengan proteksi tumpahan minyak tingkat tinggi di dermaga dan depot, pengelolaan limbah tersertifikasi, serta penyediaan bahan bakar beremisi lebih rendah untuk mendukung target Net Zero Emission 2060.">
+            We adhere to ISO 14001:2015 frameworks, implementing strict containment systems at all terminal transfer points, vapor recovery units, and proactive spill-prevention protocols. We support Indonesia's 2060 Net Zero Emission roadmap through cleaner burning fuel alternatives.
+          </p>
+          <div class="flex items-center gap-2 text-xs font-semibold text-emerald-700">
+            <i data-lucide="check-circle" class="w-4 h-4"></i>
+            <span data-i18n-en="Zero Marine Spill Protocol" data-i18n-id="Protokol Nol Tumpahan Laut">Zero Marine Spill Protocol</span>
+          </div>
+        </div>
+
+        <!-- 2. Operational Safety (HSSE) -->
+        <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-blue-200 transition-all pmn-card reveal-on-scroll delay-200">
+          <div class="w-12 h-12 rounded-xl bg-blue-100 text-pmn-blue flex items-center justify-center mb-6">
+            <i data-lucide="shield-alert" class="w-6 h-6"></i>
+          </div>
+          <span class="text-xs uppercase font-bold tracking-wider text-pmn-blue" data-i18n-en="Zero Harm Philosophy" data-i18n-id="Filosofi Nol Bahaya">Zero Harm Philosophy</span>
+          <h3 class="text-xl sm:text-2xl font-extrabold text-pmn-navy mt-1 mb-4" data-i18n-en="Operational Safety (HSSE)" data-i18n-id="Keselamatan Operasional (HSSE)">Operational Safety (HSSE)</h3>
+          <p class="text-sm sm:text-base text-slate-600 leading-relaxed mb-6" data-i18n-en="Safety is ingrained into our corporate DNA. Every marine voyage, road tanker trip, and fueling operation is governed by comprehensive Job Safety Analyses (JSA), certified personal protective equipment (PPE), and continuous personnel safety training." data-i18n-id="Keselamatan adalah prioritas utama tanpa kompromi. Seluruh pergerakan armada kapal, truk tangki, dan transfer bahan bakar dikawal Job Safety Analysis (JSA) berkala, sertifikasi kru, dan audit keselamatan operasional rutin.">
+            Safety is ingrained into our corporate DNA. Every marine voyage, road tanker trip, and fueling operation is governed by comprehensive Job Safety Analyses (JSA), certified personal protective equipment (PPE), and continuous personnel safety training.
+          </p>
+          <div class="flex items-center gap-2 text-xs font-semibold text-pmn-blue">
+            <i data-lucide="check-circle" class="w-4 h-4"></i>
+            <span data-i18n-en="5 Million+ Safe Man-Hours" data-i18n-id="5 Juta+ Jam Kerja Selamat">5 Million+ Safe Man-Hours</span>
+          </div>
+        </div>
+
+        <!-- 3. Sustainable Energy Development -->
+        <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-blue-200 transition-all pmn-card reveal-on-scroll delay-300">
+          <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center mb-6">
+            <i data-lucide="sun-medium" class="w-6 h-6"></i>
+          </div>
+          <span class="text-xs uppercase font-bold tracking-wider text-amber-600" data-i18n-en="Energy Transition" data-i18n-id="Transisi Energi">Energy Transition</span>
+          <h3 class="text-xl sm:text-2xl font-extrabold text-pmn-navy mt-1 mb-4" data-i18n-en="Sustainable Energy Development" data-i18n-id="Pengembangan Energi Berkelanjutan">Sustainable Energy Development</h3>
+          <p class="text-sm sm:text-base text-slate-600 leading-relaxed mb-6" data-i18n-en="PMN actively advocates for national biofuel integration, supporting the distribution of B35 and next-generation B40 biodiesel blends. We invest in logistics efficiencies that directly lower the carbon intensity of energy distribution." data-i18n-id="PMN aktif menyalurkan produk campuran biodiesel B35/B40 sesuai kebijakan energi nasional serta terus memperluas kapasitas logistik untuk komoditas energi transisi yang lebih ramah lingkungan.">
+            PMN actively advocates for national biofuel integration, supporting the distribution of B35 and next-generation B40 biodiesel blends. We invest in logistics efficiencies that directly lower the carbon intensity of energy distribution.
+          </p>
+          <div class="flex items-center gap-2 text-xs font-semibold text-amber-700">
+            <i data-lucide="check-circle" class="w-4 h-4"></i>
+            <span data-i18n-en="B35 & B40 Biodiesel Readiness" data-i18n-id="Kesiapan Biodiesel B35 & B40">B35 & B40 Biodiesel Readiness</span>
+          </div>
+        </div>
+
+        <!-- 4. Corporate Governance (GCG) -->
+        <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-blue-200 transition-all pmn-card reveal-on-scroll delay-400">
+          <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center mb-6">
+            <i data-lucide="building-2" class="w-6 h-6"></i>
+          </div>
+          <span class="text-xs uppercase font-bold tracking-wider text-indigo-600" data-i18n-en="Ethical Leadership" data-i18n-id="Kepemimpinan Beretika">Ethical Leadership</span>
+          <h3 class="text-xl sm:text-2xl font-extrabold text-pmn-navy mt-1 mb-4" data-i18n-en="Corporate Governance (GCG)" data-i18n-id="Tata Kelola Perusahaan (GCG)">Corporate Governance (GCG)</h3>
+          <p class="text-sm sm:text-base text-slate-600 leading-relaxed mb-6" data-i18n-en="We hold ourselves to the highest standards of transparency and integrity. Our corporate governance framework features anti-bribery management (ISO 37001), independent audits, transparent procurement, and an active whistleblowing system." data-i18n-id="Tata kelola perusahaan yang bersih merupakan pondasi kepercayaan kami. Menerapkan sistem manajemen anti-penyuapan berstandar ISO 37001, audit independen, serta kanal pelaporan pelanggaran (whistleblowing system) yang terlindungi.">
+            We hold ourselves to the highest standards of transparency and integrity. Our corporate governance framework features anti-bribery management (ISO 37001), independent audits, transparent procurement, and an active whistleblowing system.
+          </p>
+          <div class="flex items-center gap-2 text-xs font-semibold text-indigo-700">
+            <i data-lucide="check-circle" class="w-4 h-4"></i>
+            <span data-i18n-en="ISO 37001 Anti-Bribery Compliance" data-i18n-id="Kepatuhan Anti-Penyuapan ISO 37001">ISO 37001 Anti-Bribery Compliance</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- NEWS & UPDATES (Corporate Insights, Modals) -->
+  <!-- ========================================================================= -->
+  <section id="news" class="py-20 lg:py-28 bg-slate-50 relative border-t border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 reveal-on-scroll">
+        <div>
+          <span class="badge-blue mb-3" data-i18n-en="News & Updates" data-i18n-id="Berita & Terkini">News & Updates</span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-pmn-navy tracking-tight">
+            <span data-i18n-en="Latest Corporate Announcements" data-i18n-id="Informasi & Kabar Korporasi Terkini">Latest Corporate Announcements</span>
+          </h2>
+          <p class="text-slate-600 text-base sm:text-lg mt-3" data-i18n-en="Insights into PMN's strategic expansion, HSSE achievements, and national energy initiatives." data-i18n-id="Kilas informasi seputar ekspansi strategis PMN, pencapaian HSSE, dan inisiatif energi nasional.">
+            Insights into PMN's strategic expansion, HSSE achievements, and national energy initiatives.
+          </p>
+        </div>
+        <div class="mt-6 md:mt-0">
+          <a href="#contact" class="btn-secondary text-xs sm:text-sm">
+            <span data-i18n-en="Media & Press Inquiries" data-i18n-id="Pertanyaan Media & Pers">Media & Press Inquiries</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- News Cards Container (Injected via main.js) -->
+      <div id="news-cards-container" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Rendered by js/main.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- CALL TO ACTION SECTION (Full-Width Corporate Banner) -->
+  <!-- ========================================================================= -->
+  <section class="py-20 lg:py-24 bg-gradient-to-r from-pmn-navy via-pmn-blue to-pmn-navy text-white relative overflow-hidden">
+    <!-- Subtle overlay textures -->
+    <div class="absolute inset-0 bg-energy-dark-pattern opacity-25"></div>
+    <div class="absolute -right-24 -bottom-24 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 reveal-on-scroll">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-cyan-300 text-xs sm:text-sm font-bold uppercase tracking-wider mb-6">
+        <i data-lucide="sparkles" class="w-4 h-4"></i>
+        <span data-i18n-en="Strategic Energy Collaboration" data-i18n-id="Kolaborasi Energi Strategis">Strategic Energy Collaboration</span>
+      </div>
+
+      <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6">
+        <span data-i18n-en="Let's Build the Future of Energy Together." data-i18n-id="Mari Bersama Membangun Masa Depan Energi.">Let's Build the Future of Energy Together.</span>
+      </h2>
+
+      <p class="text-base sm:text-xl text-blue-100 font-normal leading-relaxed max-w-3xl mx-auto mb-10" data-i18n-en="Connect with PT Petro Mandiri Nusantara to explore business opportunities and strategic partnerships across petroleum trading, storage infrastructure, and national distribution." data-i18n-id="Hubungi PT Petro Mandiri Nusantara untuk menjajaki peluang bisnis dan kemitraan strategis dalam perdagangan minyak, infrastruktur penyimpanan, dan distribusi nasional.">
+        Connect with PT Petro Mandiri Nusantara to explore business opportunities and strategic partnerships across petroleum trading, storage infrastructure, and national distribution.
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <a href="#contact" class="btn-white-glass text-base py-3.5 px-8">
+          <span data-i18n-en="Contact Our Team" data-i18n-id="Hubungi Tim Kami">Contact Our Team</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+        <a href="tel:+622150887700" class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-lg bg-white/10 hover:bg-white/20 text-white text-sm font-semibold border border-white/20 transition-all">
+          <i data-lucide="phone-call" class="w-4 h-4 text-cyan-300"></i>
+          <span>+62 21 5088 7700</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- CONTACT US SECTION (Headquarters Details & Interactive Form) -->
+  <!-- ========================================================================= -->
+  <section id="contact" class="py-20 lg:py-28 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="max-w-3xl mx-auto text-center mb-16 flex flex-col items-center reveal-on-scroll">
+        <span class="badge-blue mb-3" data-i18n-en="Contact Us" data-i18n-id="Hubungi Kami">Contact Us</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-pmn-navy tracking-tight leading-tight">
+          <span data-i18n-en="Connect with Our Corporate Team" data-i18n-id="Terhubung dengan Tim Korporat Kami">Connect with Our Corporate Team</span>
+        </h2>
+        <p class="text-slate-600 text-base sm:text-lg mt-3 max-w-2xl mx-auto" data-i18n-en="Our commercial and technical representatives are ready to discuss your petroleum supply, storage, and logistics requirements." data-i18n-id="Perwakilan komersial dan teknis kami siap mendiskusikan kebutuhan pasokan minyak, penyimpanan, dan logistik Anda.">
+          Our commercial and technical representatives are ready to discuss your petroleum supply, storage, and logistics requirements.
+        </p>
+        <div class="w-20 h-1.5 bg-pmn-blue mt-5 rounded-full mx-auto"></div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+        
+        <!-- Left Column: Corporate Information & Office Hub -->
+        <div class="lg:col-span-5 space-y-8 reveal-on-scroll delay-100">
+          
+          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+            <h3 class="text-base font-bold text-pmn-navy mb-4 flex items-center gap-2">
+              <i data-lucide="building" class="w-5 h-5 text-pmn-blue"></i>
+              <span data-i18n-en="Headquarters Office" data-i18n-id="Kantor Pusat">Headquarters Office</span>
+            </h3>
+            <p class="text-sm text-slate-700 leading-relaxed font-medium">
+              PT Petro Mandiri Nusantara<br />
+              Menara Energi Nusantara Lt. 28<br />
+              Jl. Jend. Sudirman Kav. 52-53, SCBD<br />
+              Jakarta Selatan 12190, Indonesia
+            </p>
+
+            <div class="mt-6 pt-6 border-t border-slate-200 space-y-3.5 text-xs sm:text-sm">
+              <div class="flex items-center gap-3 text-slate-600">
+                <i data-lucide="phone" class="w-4 h-4 text-pmn-blue shrink-0"></i>
+                <span>+62 21 5088 7700 / 5088 7701</span>
+              </div>
+              <div class="flex items-center gap-3 text-slate-600">
+                <i data-lucide="mail" class="w-4 h-4 text-pmn-blue shrink-0"></i>
+                <a href="mailto:commercial@petromandiri.co.id" class="text-pmn-blue hover:underline">commercial@petromandiri.co.id</a>
+              </div>
+              <div class="flex items-center gap-3 text-slate-600">
+                <i data-lucide="clock" class="w-4 h-4 text-pmn-blue shrink-0"></i>
+                <span data-i18n-en="Mon - Fri: 08:00 - 17:00 WIB" data-i18n-id="Senin - Jumat: 08:00 - 17:00 WIB">Mon - Fri: 08:00 - 17:00 WIB</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct Department Desks -->
+          <div class="space-y-3">
+            <div class="p-4 rounded-xl border border-slate-200 bg-white flex items-center justify-between">
+              <div>
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-wider" data-i18n-en="Commercial & Trading" data-i18n-id="Perdagangan Komersial">Commercial & Trading</span>
+                <p class="text-sm font-semibold text-slate-800">trading@petromandiri.co.id</p>
+              </div>
+              <a href="mailto:trading@petromandiri.co.id" class="w-8 h-8 rounded-lg bg-blue-50 text-pmn-blue flex items-center justify-center hover:bg-pmn-blue hover:text-white transition-colors">
+                <i data-lucide="mail" class="w-4 h-4"></i>
+              </a>
+            </div>
+
+            <div class="p-4 rounded-xl border border-slate-200 bg-white flex items-center justify-between">
+              <div>
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-wider" data-i18n-en="Supply Chain & Logistics" data-i18n-id="Rantai Pasok & Logistik">Supply Chain & Logistics</span>
+                <p class="text-sm font-semibold text-slate-800">logistics@petromandiri.co.id</p>
+              </div>
+              <a href="mailto:logistics@petromandiri.co.id" class="w-8 h-8 rounded-lg bg-blue-50 text-pmn-blue flex items-center justify-center hover:bg-pmn-blue hover:text-white transition-colors">
+                <i data-lucide="mail" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Interactive Commercial Inquiry Form -->
+        <div class="lg:col-span-7 reveal-on-scroll delay-200">
+          <div class="p-8 sm:p-10 rounded-2xl bg-white border border-slate-200 shadow-xl">
+            <h3 class="text-xl font-bold text-pmn-navy mb-2" data-i18n-en="Send Us a Business Inquiry" data-i18n-id="Kirimkan Pesan atau Permintaan Pasokan">Send Us a Business Inquiry</h3>
+            <p class="text-xs sm:text-sm text-slate-500 mb-8" data-i18n-en="Please complete the form below. A dedicated commercial specialist will respond within 24 business hours." data-i18n-id="Silakan lengkapi formulir di bawah ini. Spesialis komersial kami akan merespons dalam 24 jam kerja.">
+              Please complete the form below. A dedicated commercial specialist will respond within 24 business hours.
+            </p>
+
+            <form id="contact-form" class="space-y-5">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" data-i18n-en="Full Name *" data-i18n-id="Nama Lengkap *">Full Name *</label>
+                  <input type="text" required class="w-full px-4 py-3 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-pmn-blue focus:border-transparent transition-all" placeholder="John Doe" />
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" data-i18n-en="Company Name *" data-i18n-id="Nama Perusahaan *">Company Name *</label>
+                  <input type="text" required class="w-full px-4 py-3 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-pmn-blue focus:border-transparent transition-all" placeholder="PT Contoh Energi Nusantara" />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" data-i18n-en="Business Email *" data-i18n-id="Email Perusahaan *">Business Email *</label>
+                  <input type="email" required class="w-full px-4 py-3 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-pmn-blue focus:border-transparent transition-all" placeholder="name@company.co.id" />
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" data-i18n-en="Phone / WhatsApp *" data-i18n-id="Nomor Telepon / WhatsApp *">Phone / WhatsApp *</label>
+                  <input type="tel" required class="w-full px-4 py-3 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-pmn-blue focus:border-transparent transition-all" placeholder="+62 812 3456 7890" />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" data-i18n-en="Subject / Division *" data-i18n-id="Subjek / Kebutuhan *">Subject / Division *</label>
+                <select id="inquiry-subject" class="w-full px-4 py-3 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-pmn-blue focus:border-transparent transition-all bg-white">
+                  <option value="Petroleum Trading" data-i18n-en="Petroleum Trading (HSD / MGO Supply)" data-i18n-id="Perdagangan Perminyakan (Pasokan HSD / MGO)">Petroleum Trading (HSD / MGO Supply)</option>
+                  <option value="Oil & Gas" data-i18n-en="Oil & Gas Technical Services" data-i18n-id="Layanan Teknis Hulu & Hilir Migas">Oil & Gas Technical Services</option>
+                  <option value="Energy Solutions" data-i18n-en="Energy Solutions & Storage Tanks" data-i18n-id="Infrastruktur & Tangki Penyimpanan">Energy Solutions & Storage Tanks</option>
+                  <option value="Logistics" data-i18n-en="Logistics & Maritime Vessel Charter" data-i18n-id="Logistik & Sewa Armada Kapal">Logistics & Maritime Vessel Charter</option>
+                  <option value="Partnership" data-i18n-en="General Strategic Partnership" data-i18n-id="Kemitraan Strategis Umum">General Strategic Partnership</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" data-i18n-en="Message / Operational Requirements *" data-i18n-id="Pesan / Spesifikasi Kebutuhan Proyek *">Message / Operational Requirements *</label>
+                <textarea id="inquiry-message" rows="4" required class="w-full px-4 py-3 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-pmn-blue focus:border-transparent transition-all" placeholder="Please outline your estimated volume, delivery location, and target schedule..."></textarea>
+              </div>
+
+              <div class="pt-2">
+                <button type="submit" class="w-full btn-primary py-3.5 text-base">
+                  <span data-i18n-en="Submit Business Inquiry" data-i18n-id="Kirimkan Permohonan">Submit Business Inquiry</span>
+                  <i data-lucide="send" class="w-4 h-4"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- CORPORATE FOOTER -->
+  <!-- ========================================================================= -->
+  <footer class="bg-pmn-dark text-slate-300 pt-16 pb-12 border-t border-white/10 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+        
+        <!-- Col 1: Corporate Brand Identity -->
+        <div class="lg:col-span-4 space-y-5">
+          <img src="Assets/logo-pmn-white.png" alt="PT Petro Mandiri Nusantara" class="h-11 w-auto" />
+          <p class="text-sm text-slate-300 leading-relaxed max-w-sm" data-i18n-en="PT Petro Mandiri Nusantara is a modern, reliable, and innovative Indonesian energy enterprise dedicated to fueling national industries through operational excellence and integrity." data-i18n-id="PT Petro Mandiri Nusantara adalah perusahaan energi nasional yang andal, modern, dan inovatif, berdedikasi mendukung ketahanan energi industri melalui integritas dan keunggulan operasional.">
+            PT Petro Mandiri Nusantara is a modern, reliable, and innovative Indonesian energy enterprise dedicated to fueling national industries through operational excellence and integrity.
+          </p>
+
+          <!-- Social Media Icons -->
+          <div class="flex items-center space-x-3 pt-2">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-white/10 hover:bg-pmn-blue text-white flex items-center justify-center transition-colors" aria-label="LinkedIn">
+              <i data-lucide="linkedin" class="w-4 h-4"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-white/10 hover:bg-pmn-blue text-white flex items-center justify-center transition-colors" aria-label="Instagram">
+              <i data-lucide="instagram" class="w-4 h-4"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-white/10 hover:bg-pmn-blue text-white flex items-center justify-center transition-colors" aria-label="YouTube">
+              <i data-lucide="youtube" class="w-4 h-4"></i>
+            </a>
+            <a href="mailto:info@petromandiri.co.id" class="w-9 h-9 rounded-lg bg-white/10 hover:bg-pmn-blue text-white flex items-center justify-center transition-colors" aria-label="Email">
+              <i data-lucide="mail" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="lg:col-span-2 space-y-4">
+          <h4 class="text-xs font-extrabold uppercase tracking-wider text-white" data-i18n-en="Navigation" data-i18n-id="Navigasi">Navigation</h4>
+          <ul class="space-y-2.5 text-xs sm:text-sm">
+            <li><a href="#home" class="hover:text-cyan-400 transition-colors" data-i18n-en="Home" data-i18n-id="Beranda">Home</a></li>
+            <li><a href="#about" class="hover:text-cyan-400 transition-colors" data-i18n-en="About Us" data-i18n-id="Tentang Kami">About Us</a></li>
+            <li><a href="#business" class="hover:text-cyan-400 transition-colors" data-i18n-en="Our Business" data-i18n-id="Bisnis Kami">Our Business</a></li>
+            <li><a href="#why-choose-us" class="hover:text-cyan-400 transition-colors" data-i18n-en="Why Choose PMN" data-i18n-id="Mengapa PMN">Why Choose PMN</a></li>
+            <li><a href="#sustainability" class="hover:text-cyan-400 transition-colors" data-i18n-en="Sustainability" data-i18n-id="Keberlanjutan">Sustainability</a></li>
+            <li><a href="#news" class="hover:text-cyan-400 transition-colors" data-i18n-en="News & Updates" data-i18n-id="Berita Terkini">News & Updates</a></li>
+            <li><a href="#contact" class="hover:text-cyan-400 transition-colors" data-i18n-en="Contact" data-i18n-id="Kontak">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Business Units -->
+        <div class="lg:col-span-3 space-y-4">
+          <h4 class="text-xs font-extrabold uppercase tracking-wider text-white" data-i18n-en="Business Divisions" data-i18n-id="Divisi Bisnis">Business Divisions</h4>
+          <ul class="space-y-2.5 text-xs sm:text-sm">
+            <li><a href="#business" class="hover:text-cyan-400 transition-colors" data-i18n-en="Oil & Gas Solutions" data-i18n-id="Solusi Minyak & Gas Bumi">Oil & Gas Solutions</a></li>
+            <li><a href="#business" class="hover:text-cyan-400 transition-colors" data-i18n-en="Petroleum Trading (HSD/MGO)" data-i18n-id="Perdagangan Migas (HSD/MGO)">Petroleum Trading (HSD/MGO)</a></li>
+            <li><a href="#business" class="hover:text-cyan-400 transition-colors" data-i18n-en="Integrated Energy Infrastructure" data-i18n-id="Infrastruktur Energi Terpadu">Integrated Energy Infrastructure</a></li>
+            <li><a href="#business" class="hover:text-cyan-400 transition-colors" data-i18n-en="Logistics & Maritime Tankers" data-i18n-id="Logistik & Armada Tanker">Logistics & Maritime Tankers</a></li>
+            <li><a href="#business" class="hover:text-cyan-400 transition-colors" data-i18n-en="HSSE & Field Services" data-i18n-id="Layanan Teknis & HSSE">HSSE & Field Services</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Corporate Contact Details -->
+        <div class="lg:col-span-3 space-y-4">
+          <h4 class="text-xs font-extrabold uppercase tracking-wider text-white" data-i18n-en="Corporate Inquiries" data-i18n-id="Kontak Korporat">Corporate Inquiries</h4>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            Menara Energi Nusantara Lt. 28<br />
+            SCBD, Jakarta Selatan 12190<br />
+            Tel: +62 21 5088 7700<br />
+            Email: info@petromandiri.co.id
+          </p>
+          <div class="pt-2">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 block mb-2" data-i18n-en="Accreditations" data-i18n-id="Sertifikasi Mutu">Accreditations</span>
+            <div class="flex flex-wrap gap-2 text-[11px] text-cyan-300">
+              <span class="px-2 py-1 rounded bg-white/10 border border-white/15">ISO 9001:2015</span>
+              <span class="px-2 py-1 rounded bg-white/10 border border-white/15">ISO 14001:2015</span>
+              <span class="px-2 py-1 rounded bg-white/10 border border-white/15">ISO 45001:2018</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright & Bottom Disclaimers -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+        <p>© 2026 PT Petro Mandiri Nusantara. All Rights Reserved.</p>
+        <div class="flex items-center space-x-6">
+          <a href="#about" class="hover:text-white transition-colors" data-i18n-en="Privacy Policy" data-i18n-id="Kebijakan Privasi">Privacy Policy</a>
+          <a href="#about" class="hover:text-white transition-colors" data-i18n-en="Terms of Service" data-i18n-id="Syarat & Ketentuan">Terms of Service</a>
+          <a href="#sustainability" class="hover:text-white transition-colors" data-i18n-en="HSSE Policy" data-i18n-id="Kebijakan HSSE">HSSE Policy</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- BUSINESS DETAIL MODAL -->
+  <!-- ========================================================================= -->
+  <div id="business-modal" class="fixed inset-0 z-50 pmn-modal-backdrop flex items-center justify-center p-4 sm:p-6 hidden pmn-modal">
+    <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative pmn-modal-container">
+      <button type="button" id="business-modal-close" class="absolute top-4 right-4 z-30 w-9 h-9 rounded-full bg-black/40 hover:bg-black/60 text-white flex items-center justify-center backdrop-blur-md transition-colors" aria-label="Close Modal">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <div id="business-modal-content"></div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- NEWS READER MODAL -->
+  <!-- ========================================================================= -->
+  <div id="news-modal" class="fixed inset-0 z-50 pmn-modal-backdrop flex items-center justify-center p-4 sm:p-6 hidden pmn-modal">
+    <div class="bg-white rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative pmn-modal-container">
+      <button type="button" id="news-modal-close" class="absolute top-4 right-4 z-30 w-9 h-9 rounded-full bg-black/40 hover:bg-black/60 text-white flex items-center justify-center backdrop-blur-md transition-colors" aria-label="Close Article">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <div id="news-modal-content"></div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- TOAST NOTIFICATION -->
+  <!-- ========================================================================= -->
+  <div id="pmn-toast" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 max-w-md bg-pmn-dark text-white p-4 rounded-xl shadow-2xl border border-white/20 flex items-start gap-3">
+    <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 mt-0.5">
+      <i data-lucide="check-circle" class="w-5 h-5"></i>
+    </div>
+    <div class="flex-grow">
+      <h4 class="text-xs font-bold uppercase tracking-wider text-cyan-300">PT Petro Mandiri Nusantara</h4>
+      <p id="pmn-toast-message" class="text-xs sm:text-sm text-slate-200 mt-0.5"></p>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- FLOATING BACK TO TOP BUTTON -->
+  <!-- ========================================================================= -->
+  <button type="button" id="back-to-top" class="fixed bottom-6 left-6 z-40 w-11 h-11 rounded-full bg-pmn-navy hover:bg-pmn-blue text-white shadow-xl flex items-center justify-center transition-all duration-300" aria-label="Back to top">
+    <i data-lucide="arrow-up" class="w-5 h-5"></i>
+  </button>
+
+  <!-- Application Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
